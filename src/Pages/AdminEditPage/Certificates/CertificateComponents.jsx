@@ -1,5 +1,5 @@
-import React ,{useState}from 'react'
-import img from '../../../Assets/Images/Certificate.png'
+import React, { useState } from "react";
+import img from "../../../Assets/Images/Certificate.png";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 
 const CertificateComponent = () => {
@@ -18,7 +18,7 @@ const CertificateComponent = () => {
       </div>
       <div className="absolute h-full top-0 rounded-lg flex flex-col justify-center items-baseline bg-black p-4 text-white transform group-hover:translate-y-0 bg-opacity-90 group-hover:opacity-85 translate-y-80  transition-transform duration-500 ease-in-out ">
         <button
-          className="bg-slate-500 cu self-end z-10 flex gap-2 md:gap-3 items-center mb-2 xl:mb-4 px-2 py-2 rounded-lg"
+          className="bg-slate-500  self-end z-10 flex gap-2 md:gap-3 items-center my-2 xl:my-4 px-2 py-2 rounded-lg"
           onClick={openImageInNewTab}
         >
           <BsBoxArrowInUpRight />
@@ -32,9 +32,8 @@ const CertificateComponent = () => {
           Project description Here.
         </p>
       </div>
-      
     </div>
   );
-}
+};
 
-export default CertificateComponent
+export default CertificateComponent;

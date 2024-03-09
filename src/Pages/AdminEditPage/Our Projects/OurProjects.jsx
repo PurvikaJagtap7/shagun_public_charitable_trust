@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProjectComponent from "./ProjectComponent";
-
-function Project() {
+import OurProjectComponent from "./OurProjectsComponents";
+const OurProjects = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [deviceType, setDeviceType] = useState("");
 
@@ -33,31 +32,26 @@ function Project() {
   }, []);
 
   const settings = {
-    slidesToShow: deviceType === "PC" ? 3 : deviceType === "Tablet" ? 2 : 1,
+    slidesToShow: deviceType === "PC" ? 4 : deviceType === "Tablet" ? 2 : 1,
     infinite: true,
     pauseOnHover: true,
-    autoplay: true,
+    autoplay: false,
     slidesToScroll: 1,
-    autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: 0,
     beforeChange: (current, next) => setCurrentSlide(next),
   };
-
   return (
-    <div className="min-h-screen py-16">
-      <div className="flex  mx-auto justify-center font-roboto text-4xl font-bold my-10">
-        Our Projects
-      </div>
-      <div className="xl:px-16 xl:mx-20  h-[30rem]">
+    <div>
+      <div className="  ">
         <Slider {...settings} className="">
           {[...Array(9)].map((_, index) => (
-            <ProjectComponent key={index} className="hover:scale-110" />
+            <OurProjectComponent key={index} className="hover:scale-110" />
           ))}
         </Slider>
       </div>
     </div>
   );
-}
+};
 
-export default Project;
+export default OurProjects;

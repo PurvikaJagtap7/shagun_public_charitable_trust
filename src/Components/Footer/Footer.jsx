@@ -36,7 +36,7 @@ function Footer() {
             <a href="#" className="hover:text-orange-500">
               Our Team
             </a>
-            <a href="#" className="hover:text-orange-500">
+            <a href="/futureprojects" className="hover:text-orange-500">
               Future Projects
             </a>
             <a href="#" className="hover:text-orange-500">
@@ -47,10 +47,10 @@ function Footer() {
         <div className="pt-10 md:pl-3 md:pt-0 xl:pt-0">
           <p>Quick Link</p>
           <div className="mt-5 flex flex-col gap-2 text-gray-400">
-            <a href="#" className="hover:text-orange-500">
+            <a href="./donation" className="hover:text-orange-500">
               Donate Now
             </a>
-            <a href="#" className="hover:text-orange-500">
+        <a href="/trusteeRegister" className="hover:text-orange-500">
               Become a volunteer
             </a>
             <a href="#" className="hover:text-orange-500">

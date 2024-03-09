@@ -26,10 +26,22 @@ const Banner = () => {
             <img
               src={school}
               alt=""
-              className="h-screen w-screen object-cover "
+              className="h-[95vh] w-screen object-cover "
             />
 
-            <div className="absolute top-0 bg-opacity-60 bg-black h-screen w-screen"></div>
+            <div className="absolute top-0 bg-opacity-60 bg-black h-[95vh] w-screen">
+              <div className="h-full m-auto flex flex-col justify-center text-white items-center">
+                <p className="text-5xl font-bold  font-roboto ">
+                  BECAUSE PEOPLE MATTERS
+                </p>
+                <p className="text-3xl mt-8">
+                  || शतहस्त समाहर सहस्रहस्त संकिर ||
+                </p>
+                <p className="text-2xl mt-5 font-roboto ">
+                  Earn with hundred hands and donate with thousand hands.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div>
@@ -37,12 +49,20 @@ const Banner = () => {
             <img
               src={college}
               alt=""
-              className="h-screen w-screen object-cover "
+              className="h-[95vh] w-screen object-cover "
             />
 
-            <div className="absolute top-0 bg-opacity-60 bg-black h-screen w-screen">
-              <div className="h-full m-auto flex justify-center text-2xl text-white items-center">
-                Text
+            <div className="absolute top-0 bg-opacity-45 bg-black h-[95vh] w-screen">
+              <div className="h-full m-auto flex flex-col justify-center    text-white items-center">
+                <p className="text-5xl font-bold  font-roboto ">
+                  BECAUSE PEOPLE MATTERS
+                </p>
+                <p className="text-3xl mt-8">
+                  || शतहस्त समाहर सहस्रहस्त संकिर ||
+                </p>
+                <p className="text-2xl mt-5 font-roboto ">
+                  Earn with hundred hands and donate with thousand hands.
+                </p>
               </div>
             </div>
           </div>

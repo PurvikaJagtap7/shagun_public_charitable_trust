@@ -2,12 +2,12 @@ import React from "react";
 
 const Donate = () => {
   return (
-    <div className="bg-black p-28">
+    <div className="bg-black py-16">
       <div className="heading text-5xl text-center font-bold tracking-tight text-[#FD7B23]">
         DONATE US
       </div>
 
-      <div className="about-us-containers flex flex-col md:flex-row xl:flex-row p-14 gap-32 items-center justify-center mt-20">
+      <div className="about-us-containers flex flex-col md:flex-row xl:flex-row p-10 gap-32 items-center justify-center ">
         <div className="left text-white text-xs text-center">
           G Pay Account
           <div className="scanner w-96 h-96 bg-gray-300 flex justify-center items-center mt-2">
